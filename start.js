@@ -240,13 +240,15 @@ async function updateEmployeeRole() {
                 type:"list",
                 message:"Which employee would you like to update?",
                 name: "employee",
-                choices: employeeWholeName
+                choices: employeeWholeName,
+                loop:false,
             },
             {
                 type:"list",
                 message: "What is this employee's new role?",
                 name: "newRole",
-                choices: totalRoles
+                choices: totalRoles,
+                loop:false,
             }
         ]).then(function(response){
             var chosenEmployee = response.employee.split(' ');
