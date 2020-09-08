@@ -97,6 +97,7 @@ function viewEmployee() {
                 for(var i = 0; i < res.length; i++) {
                     console.log("First Name: " + res[i].first_name + " || Last name: " + res[i].last_name + " || Id: " + res[i].id );
                 }
+                start();
                 
             })
             
